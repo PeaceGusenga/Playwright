@@ -14,7 +14,7 @@ test('visit site', async ({ page }) => {
     await page.goto('https://www.demoblaze.com');
   
     // Click the get started link.
-    await page.getByRole('link',{name:'Cart'}).click();
+    await page.getByRole('link', { name: 'Cart'}).click();
   
     // Expects the URL to contain intro.
     await expect(page).toHaveURL(/.*cart/);
